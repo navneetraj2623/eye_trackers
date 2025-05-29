@@ -1,0 +1,6 @@
+pandas
+matplotlib.pyplot
+json
+seaborn
+numpy 
+matplotlib.cm
