@@ -1,0 +1,11 @@
+Eye Tracking Summary Report
+===============================
+
+Total Gaze Points: 3438
+Total Fixations: 2
+Average Saccadic Distance: 10.49 pixels
+Average Saccadic Velocity: 7.37 pixels/sec
+Average Saccadic Density: 0.01 saccades/sec
+
+Fixations exported to: fixations.csv
+Saccades exported to: saccades.csv

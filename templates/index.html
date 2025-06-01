@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Webcam Eye Tracker with Calibration</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="static/style.css">
   <script src="https://webgazer.cs.brown.edu/webgazer.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/heatmapjs@2.0.2/heatmap.min.js"></script>
 </head>
@@ -10,6 +10,18 @@
   <h1>Webcam Eye Tracker with Calibration</h1>
   <canvas id="overlay"></canvas>
   <div id="heatmapContainer"></div>
+  <div id="calibrationGrid">
+  <div class="calibration-point" style="top: 10%; left: 10%;"></div>
+  <div class="calibration-point" style="top: 10%; left: 50%;"></div>
+  <div class="calibration-point" style="top: 10%; left: 90%;"></div>
+  <div class="calibration-point" style="top: 50%; left: 10%;"></div>
+  <div class="calibration-point" style="top: 50%; left: 50%;"></div>
+  <div class="calibration-point" style="top: 50%; left: 90%;"></div>
+  <div class="calibration-point" style="top: 90%; left: 10%;"></div>
+  <div class="calibration-point" style="top: 90%; left: 50%;"></div>
+  <div class="calibration-point" style="top: 90%; left: 90%;"></div>
+</div>
+
   <button onclick="downloadData()">Download Gaze Data</button>
   <script src="static/script.js"></script>
 </body>

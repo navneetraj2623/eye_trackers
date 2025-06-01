@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import matplotlib.cm as cm
 import numpy as np
+from matplotlib import colormaps
 
 # --- 1. Load Gaze Data ---
 with open('gazeData.json', 'r') as f:
@@ -95,7 +96,8 @@ if saccade_distances:
     avg_velocity = np.mean(np.array(saccade_distances) / np.array(saccade_durations))
     avg_density = len(saccade_distances) / (df['timestamp'].iloc[-1] / 1000)
 
-    print(f"\n\uD83D\uDCCF Average Saccadic Distance: {avg_distance:.2f} pixels")
+    print(f"\n📏 UCCF Average Saccadic Distance: {avg_distance:.2f} pixels")
+
     print(f"⚡ Average Saccadic Velocity: {avg_velocity:.2f} pixels/sec")
     print(f"📈 Average Saccadic Density: {avg_density:.2f} saccades/sec")
 

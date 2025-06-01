@@ -6,7 +6,6 @@ const heatmap = h337.create({
   minOpacity: 0,
   blur: 0.75,
 });
-
 window.onload = () => {
   webgazer.setGazeListener((data, timestamp) => {
     if (data) {
